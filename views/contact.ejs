@@ -1,0 +1,110 @@
+<%- include('layouts/header.ejs') %>
+<%- include('layouts/navigation.ejs') %>
+<!--Section: Contact v.1-->
+<section class="section pb-5">
+
+  <!--Section heading-->
+  <h2 class="section-heading h1 pt-4">Contact Me</h2>
+  <!--Section description-->
+  <p class="section-description pb-4">Please only serious offers</p>
+
+  <div class="row">
+
+    <!--Grid column-->
+    <div class="col-lg-5 mb-4">
+      <form action="/submitContact" method="POST">
+      <!--Form with header-->
+      <div class="card">
+
+        <div class="card-body">
+          <!--Header-->
+          <div class="form-header">
+            <h3><i class="fas fa-envelope"></i> Write to me:</h3>
+          </div>
+
+          <p>I write when i have the time</p>
+          <br>
+
+          <!--Body-->
+          <div class="md-form">
+            <i class="fas fa-user prefix grey-text"></i>
+            <input type="text" id="form-name" class="form-control" name="fname" required>
+            <label for="form-name">First name</label>
+          </div>
+
+          <div class="md-form">
+            <i class="fas fa-user prefix grey-text"></i>
+            <input type="text" id="form-name" class="form-control" name="lname" required>
+            <label for="form-name">Last name</label>
+          </div>
+
+          <div class="md-form">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <input type="text" id="form-email" class="form-control" name="email" required>
+            <label for="form-email">Your email</label>
+          </div>
+
+          <div class="md-form">
+            <i class="fas fa-tag prefix grey-text"></i>
+            <input type="text" id="form-Subject" class="form-control" name="subject" required>
+            <label for="form-Subject">Subject</label>
+          </div>
+
+          <div class="md-form">
+            <i class="fas fa-pencil-alt prefix grey-text"></i>
+            <textarea id="form-text" class="form-control md-textarea" rows="3" name="comment" required></textarea>
+            <label for="form-text">Comments</label>
+          </div>
+
+          <div class="text-center mt-4">
+            <button class="btn btn-light-blue">Submit</button>
+          </div>
+
+        </div>
+
+      </div>
+      <!--Form with header-->
+    </form>
+
+
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-lg-7">
+
+      <!--Google map-->
+      <div id="map-container-section" class="z-depth-1-half map-container-section mb-4">
+        <iframe allowtransparency="true" frameborder="0" scrolling="no" style="width: 100%; height: 400px; "
+        src="https://maps.google.com/maps?q=san%20antonio&t=&z=13&ie=UTF8&iwloc=&output=embed">
+        </iframe>
+      </div>
+
+      <br>
+      <!--Buttons-->
+      <div class="row text-center">
+        <div class="col-md-4">
+          <a class="btn-floating"><i class="fas fa-map-marker-alt"></i></a>
+          <p>San Antonio,Tx 78222</p>
+          <p>United States</p>
+        </div>
+
+        <div class="col-md-4">
+          <a class="btn-floating "><i class="fas fa-phone"></i></a>
+          <p>+1 (210)-841-8742</p>
+        </div>
+
+        <div class="col-md-4">
+          <a class="btn-floating"  href="mailto:rrodr051@jaguar.tamu.edu" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a>
+          <p>rrodr051@jaguar.tamu.edu</p>
+        </div>
+      </div>
+
+    </div>
+    <!--Grid column-->
+
+  </div>
+
+</section>
+<!--Section: Contact v.1-->
+<%- include('layouts/footer.ejs') %>

@@ -1,0 +1,127 @@
+<%- include('layouts/header.ejs') %>
+<%- include('layouts/navigation.ejs') %>
+
+<style>
+  body {
+   background-color:rgb(255, 255, 255);
+  }
+  .no-gutters {
+margin-right: 0;
+margin-left: 0;
+}
+ .col,
+ [class*="col-"] {
+padding-right: 0;
+padding-left: 0;
+}
+  .card{
+    background-image: url("/img/celestial-background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+.rainbow {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 32px;
+    font-family: monospace;
+    letter-spacing: 5px;
+}
+.rainbow_text_animated {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+  </style>
+
+<br><br>
+<!-- Card Wider -->
+<div class="card card-body-cascade">
+  <div class="container-fluid">
+    <div class="row no-gutters">
+      <div class="col-4 col-sm-4 text-center" style="align-self: center;">
+       <h2 style="color: rgb(255, 255, 255);">The Story of Me</h2>
+       <p style="color: whitesmoke">It was May of 1997, "Hypnotize" by The Notorious B.I.G. was number one on the charts and people washed their hands without the government pressuring them too. A boy would be born, a boy that would go on to protect the people. He would not have super powers or
+          an endless supply of money, no all he had was common sense. All people were born with common sense, but most did not use it. The world this boy lived in would be ravaged by a sickness that could infect many people quickly and cause severe long-term damage to the exposed
+           health. How would this boy go on to protect the people you  ask. Well, he would simply stay home and play video games, wear a mask when he needed to travel out into the real world and wash his hands on a regular basis.
+       </p>
+      </div>
+      <div class="col-8 col-sm-auto">
+         <!-- Card image -->
+  <div class="view view-cascade overlay">
+    <img class="card-img-top" src="/img/texastulips.jpg" style="width: auto; height: auto;" alt="Card image cap">
+  </div>
+
+  <!-- Card content -->
+  <div class="card-body card-body-cascade text-center pb-0">
+
+    <!-- Title -->
+    <h4 class="card-title" style="color: whitesmoke;"><strong>Rey Rodriguez</strong></h4>
+    <!-- Subtitle -->
+      <h5 class="rainbow_text_animated"><strong>
+        Professional Procrastinator</strong></h5>
+    <!-- Text -->
+    <p class="card-text" style="color: whitesmoke;">This is a work in progress. <br> Expected Finish date : Later </p>
+
+    <!-- Linkedin -->
+    <a class="px-2 fa-lg li-ic" href="https://www.linkedin.com/in/rey-rodriguez-49550115b/"><i class="fab fa-linkedin-in"></i></a>
+    <!-- Twitter -->
+    <a class="px-2 fa-lg tw-ic" href="https://twitter.com/driagis97"><i class="fab fa-twitter"></i></a>
+    <!-- Dribbble -->
+    <a class="px-2 fa-lg fb-ic" href="https://www.facebook.com/digital.disturbance"><i class="fab fa-facebook-f"></i></a>
+
+  </div>
+      </div>
+      <div class="col-4 col-sm-4">
+        <h2 style="color: whitesmoke;">Likes/Dislikes</h2>
+          <ul style="list-style-type: disc;">
+            <li style="font-size: x-large; color: whitesmoke;">Likes <br></li>
+            <ul style="color: whitesmoke;">Food
+              <ul>
+                <li style="color: whitesmoke;">Pizza</li>
+                <li style="color: whitesmoke;">Big Red</li>
+                <li style="color: whitesmoke;">Lemon Chips</li>
+                <li style="color: whitesmoke;">Sour Cream and Onion Pringles</li>
+              </ul>
+             Movies
+              <ul>
+                <li style="color: whitesmoke;">How to train your dragon</li>
+                <li style="color: whitesmoke;">Big Hero Six</li>
+                <li style="color: whitesmoke;">Star wars</li>
+                <li style="color: whitesmoke;">Moana</li>
+              </ul>
+            </ul>
+            <li style="font-size: x-large; color: whitesmoke;">Dislikes</li>
+            <ul style="color: whitesmoke;">Food
+              <ul>
+                <li style="color: whitesmoke;">Cheese</li>
+                <li style="color: whitesmoke;">Eggs</li>
+                <li style="color: whitesmoke;">Fish</li>
+                <li style="color: whitesmoke;">Pizza Pringles</li>
+              </ul>
+             Movies
+              <ul>
+                <li style="color: whitesmoke;">50 shades of Grey</li>
+                <li style="color: whitesmoke;">Twilight</li>
+              </ul>
+            </ul>
+         </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Card Wider -->
+<%- include('layouts/footer.ejs') %>

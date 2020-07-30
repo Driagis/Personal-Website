@@ -1,0 +1,161 @@
+
+<%- include('layouts/header.ejs') %>
+<%- include('layouts/navigation.ejs') %>
+<style>
+      .no-gutters {
+margin-right: 0;
+margin-left: 0;
+}
+ .col,
+ [class*="col-"] {
+padding-right: 0;
+padding-left: 0;
+}
+.card{
+    min-height: 400px;
+}
+</style>
+    <!--Carousel Wrapper-->
+<div id="video-carousel-example2" class="carousel slide carousel-fade" data-ride="carousel" data-pause="hover" >
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#video-carousel-example2" data-slide-to="0" class="active"></li>
+      <li data-target="#video-carousel-example2" data-slide-to="1"></li>
+      <li data-target="#video-carousel-example2" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+      <!-- First slide -->
+      <div class="carousel-item active" id="myCar">
+        <!--Mask color-->
+        <div class="view">
+          <!--Video source-->
+          <div class="embed-responsive embed-responsive-21by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/C_GdW8GZ6vw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+            </div>   
+        </div>
+  
+        <!--Caption-->
+        <div class="carousel-caption">
+            <h1 style="color: rgb(4, 163, 18); font-weight: bold;" >Gaming</h1>
+        </div>
+        <!--Caption-->
+      </div>
+      <!-- /.First slide -->
+  
+      <!-- Second slide -->
+      <div class="carousel-item" id="myCar">
+        <!--Mask color-->
+        <div class="view">
+          <!--Video source-->
+          <div class="embed-responsive embed-responsive-21by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ipFhGlt8Qkw?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+  
+        <!--Caption-->
+        <div class="carousel-caption">
+            <h1 style="color: whitesmoke; font-weight: bold;">Watching Youtube</h1>
+                </div>
+        <!--Caption-->
+      </div>
+      <!-- /.Second slide -->
+  
+      <!-- Third slide -->
+      <div class="carousel-item" id="myCar">
+        <!--Mask color-->
+        <div class="view">
+          <!--Video source-->
+          <div class="embed-responsive embed-responsive-21by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4FX_2UevHbE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
+                 </div>
+        </div>
+  
+        <!--Caption-->
+        <div class="carousel-caption">
+          <div class="animated fadeInDown">
+            <h1 style="color: black; font-weight: bold;">TableTop Games</h1>
+          </div>
+        </div>
+        <!--Caption-->
+      </div>
+      <!-- /.Third slide -->
+    </div>
+    <!--/.Slides-->
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#video-carousel-example2" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#video-carousel-example2" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+  </div>
+  <!--Carousel Wrapper-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm" style="text-align: center; list-style-position: inside;">
+        <!-- Card -->
+    <div class="card" style="background-image: url(/img/sp-inv.jpg);">  
+    <!-- Card content -->
+            <div class="card-body">
+  
+      <!-- Title -->
+                <h4 class="card-title" style="font-weight: bold; font-size: 50px;">Favorite Games</h4>
+      <!-- Text -->
+                <ul style="font-size: 25px;">
+                    <li style="font-weight: bold;">Halo</li>
+                    <li style="font-weight: bold;">Pokemon</li>
+                    <li style="font-weight: bold;">Minecraft</li>
+                </ul>  
+             </div>
+  
+     </div>
+  <!-- Card -->
+      </div>
+      <div class="col-sm" style="text-align: center; list-style-position: inside; ">
+       <!-- Card -->
+       <div class="card" style="background-image: url(/img/youtube.jpg); background-repeat: no-repeat; background-size: cover;">  
+        <!-- Card content -->
+                <div class="card-body">
+      
+          <!-- Title -->
+                    <h4 class="card-title" style="font-weight: bold; font-size: 50px;">Followed youtubers</h4>
+          <!-- Text -->
+                    <ul style="font-size: 25px;">
+                        <li style="font-weight: bold;">Linus Tech Tips</li>
+                        <li style="font-weight: bold;">Code Bullet</li>
+                        <li style="font-weight: bold;">JoCat</li>
+                    </ul>  
+                 </div>
+      
+         </div>
+      <!-- Card -->      </div>
+      <div class="col-sm" style="text-align: center; list-style-position: inside;">
+        <!-- Card -->
+        <div class="card" style="background-image: url(/img/dnd.jpg); background-repeat: no-repeat; background-size: cover;">  
+            <!-- Card content -->
+                    <div class="card-body">
+          
+              <!-- Title -->
+                        <h4 class="card-title" style="font-weight: bold; font-size: 50px;">TableTop Games</h4>
+              <!-- Text -->
+                        <ul style="font-size: 25px;">
+                            <li style="font-weight: bold;">Dungeons and Dragons</li>
+                            <li style="font-weight: bold;">PathFinder</li>
+                            <li style="font-weight: bold;">Numenera</li>
+
+                        </ul>  
+                     </div>
+          
+             </div>
+          <!-- Card -->
+      </div>
+    </div>
+  </div>
+  </div>
+  
+<%- include('layouts/footer.ejs') %>
